@@ -15,6 +15,7 @@
 body {
   background-color: var(--branco);
   font-family: "Poppins", sans-serif;
+  padding-top: 120px;
 }
 .header {
   display: flex;
@@ -26,6 +27,7 @@ body {
   right: 0;
   background-color: var(--rosa-antigo);            
   z-index: 999;
+  padding: 10px 40px;
 }
 .logo{
   display: flex;
@@ -67,4 +69,9 @@ transform: scale(1.1);
   font-size: 24px;
   color: var(--branco);
   font-weight: bold;
+}
+
+.products {
+  background-color: var(--rosa-claro);
+  margin-top: 120px;
 }
