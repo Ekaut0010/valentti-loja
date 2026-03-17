@@ -3,7 +3,7 @@
   --rosa-blush: #f5b6c4;
   --rosa-antigo: #d46a92;
   --branco: #fffff6;
-  --dourado: #c9a227;
+  --bg: #141414;
 }
 * {
   margin: 0;
@@ -68,10 +68,68 @@ transform: scale(1.1);
   margin: 0 0;
   font-size: 24px;
   color: var(--branco);
-  font-weight: bold;
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.title_products {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 36px;
+  color: var(--bg);
+  margin-bottom: 40px;
+  padding-top: 1rem;
 }
 
 .products {
   background-color: var(--rosa-claro);
   margin-top: 120px;
+}
+
+.product_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+}
+
+.product_price{
+  color: var(--bg);
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card_product button{
+  background: var(--rosa-antigo);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card_product button:hover {
+  background: var(--rosa-blush);
+}
+
+.card_product img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card_product{
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 375px;
+  transition: 0.3s;
+}
+
+.card_product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
