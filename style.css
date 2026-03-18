@@ -11,6 +11,7 @@
   border: none;
   outline: none;
   text-decoration: none;
+  font-family: "lexend deca", sans-serif;
 }
 body {
   background-color: var(--branco);
@@ -25,7 +26,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--rosa-antigo);            
+  background-color: var(--branco);            
   z-index: 999;
   padding: 10px 40px;
 }
@@ -34,7 +35,11 @@ body {
   flex-direction: column;
   padding: 20px 0;
   margin-left: 20px;
-  color: var(--branco);
+  color: var(--bg);
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 nav {
@@ -42,13 +47,16 @@ nav {
   gap: 40px;
 }
 .nav_bar a {
-  color: var(--branco);
+  color: var(--bg);
   font-size: 18px;
   font-weight: bold;
   transition: 0.3s;
+  background: transparent;
 }
 .nav_bar a:hover {
-  transform: scale(1.1);
+ font-size: 1.25rem;
+  color: var(--rosa-antigo);
+  border-bottom: 2px solid var(--rosa-antigo);
 }
 .icons{
   display: flex;
@@ -66,14 +74,74 @@ transform: scale(1.1);
 
 #slogan {
   margin: 0 0;
-  font-size: 24px;
-  color: var(--branco);
+  font-size: 32px;
+  color: var(--bg);
   font-family: "Tangerine", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
+.banner {
+  margin-top: 100px;
+}
 
+.slider{
+width: 100%;
+position: relative;
+overflow: hidden;  
+}
+
+.slides{
+display: none;
+position: relative;
+}
+.slides.active{
+display: block;
+}
+
+.slides img{
+height: 700px;
+width: 100%;
+object-fit: cover;
+}
+
+.next, .prev {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(0,0,0,0.4);
+color: white;
+}
+.prev{
+  left: 10px;
+}
+
+.next{
+  right: 10px;
+}
+
+.dots{
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot{
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  display: inline-block;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active{
+  background: white;
+  transform: scale(1.2);
+}
 .title_products {
   text-align: left;
   margin-left: 20px;
