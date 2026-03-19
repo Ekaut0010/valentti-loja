@@ -5,6 +5,7 @@
   --branco: #fffff6;
   --bg: #141414;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -67,6 +68,7 @@ nav {
 .cart{
 padding-top: 10px;
 }
+
 #lupa {
   width: 50px;
   border: none;
