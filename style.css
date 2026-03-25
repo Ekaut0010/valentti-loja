@@ -15,7 +15,7 @@
   font-family: "lexend deca", sans-serif;
 }
 body {
-  background-color: var(--branco);
+  background-color: var(--rosa-blush);
   font-family: "Poppins", sans-serif;
   padding-top: 120px;
 }
@@ -59,6 +59,35 @@ nav {
  font-size: 1.25rem;
   color: var(--rosa-antigo);
   border-bottom: 2px solid var(--rosa-antigo);
+}
+.menu-item {
+  position: relative;
+  list-style: none;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: var(--branco);
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 5px;
+  list-style: none;
+ 
+
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+}
+
+.menu-item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  gap: 20px;
+}
+
+li .item{
+padding-top: 5px;
 }
 .icons{
   display: flex;
@@ -207,7 +236,7 @@ color: white;
 }
 
 .products {
-  background-color: var(--rosa-claro);
+  background-color: var(--branco);
   margin-top: 120px;
 }
 
@@ -255,4 +284,31 @@ color: white;
 .card_product:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.about {
+  background-color: var(--branco);
+  margin-top: 120px;
+  padding: 40px;
+}
+
+.title_about {
+  height: 25px;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 36px;
+  color: var(--bg);
+  margin-bottom: 20px;
+}
+.about_description {
+  font-style: italic;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 18px;
+  color: var(--bg);
+  margin-bottom: 100px;
+  line-height: 1.6;
+  margin-top: 20px;
 }

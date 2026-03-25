@@ -30,7 +30,15 @@
       <nav class="nav_bar">
 
         <a href="#" class="nav__home">Início</a>
-        <a href="#nav_products" class="nav__products">Produtos</a>
+        <li class="menu-item">
+          <a href="produtos.html">Produtos</a>
+
+          <ul class="dropdown">
+            <li class="item"><a href="maquiagem.html">Maquiagem</a></li>
+            <li class="item"><a href="cabelos.html">Cabelos</a></li>
+            <li class="item"><a href="roupas.html">Roupas</a></li>
+          </ul>
+        </li>
         <a href="#nav__about" class="nav__about">Sobre</a>
         <a href="#nav__contact" class="nav__contact">Contato</a>
 
@@ -70,7 +78,7 @@
   </section>
 
   <section class="products" id="nav_products">
-    <h1 class="title_products">Novos Produtos</h1>
+    <h1 class="title_products">Novidades</h1>
     <div class="product_container">
       <div class="card_product">
         <img src="./img/batom_bala_lipcolor_3_5g_dalla_891_1_760992ef38527de08f970e51439d2ff9.webp" alt="Produto">
@@ -101,6 +109,14 @@
         </div>
       </div>
     </div>
+  </section>
+  <section class="about" id="nav__about">
+    <h1 class="title_about">Sobre Nós</h1>
+    <p class="about_description">Somos uma loja de cosméticos dedicada a oferecer produtos de alta qualidade para
+      realçar a beleza de nossos clientes. Com uma ampla variedade de maquiagens, cuidados com a pele e fragrâncias,
+      buscamos proporcionar uma experiência única e satisfatória para cada pessoa que visita nossa loja. Nossa missão é
+      ajudar nossos clientes a se sentirem confiantes e radiantes, oferecendo produtos que atendam às suas necessidades
+      e desejos de beleza.</p>
   </section>
 
 </body>
